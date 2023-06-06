@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
     isDrawing = true;
     var coordinates = getCoordinates(event);
     // context.beginPath();
-    context.lineWidth = 10
+    context.lineWidth = 24
     context.moveTo(coordinates.x, coordinates.y);
     }
 
@@ -75,5 +75,6 @@ window.addEventListener('load', () => {
         var canvasHeight = canvas.height;
 
         context.clearRect(0, 0, canvasWidth, canvasHeight);
+        result.innerText = ''
     })
 });
